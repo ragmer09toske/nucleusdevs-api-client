@@ -22,6 +22,7 @@ const UserList = () => {
         setLoading(false);
       } catch (error) {
         setError(error.message);
+        localStorage.removeItem('token')
         setLoading(false);
       }
     };
